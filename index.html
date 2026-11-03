@@ -1,0 +1,1630 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>United Church of God | Vemulanarva</title>
+
+<meta name="description" content="United Church of God, Vemulanarva, Andhra Pradesh, India. Join us for worship, prayer and fellowship.">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+/* ===============================
+   GENERAL SETTINGS
+================================ */
+
+:root {
+  --navy: #101e32;
+  --gold: #d9ad63;
+  --white: #ffffff;
+  --light: #f7f5ef;
+  --text: #303b4c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+  background: var(--light);
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+section {
+  padding: 75px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy);
+  padding: 12px 25px;
+  margin: 7px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: white;
+}
+
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading h2 {
+  font-size: 38px;
+  color: var(--navy);
+  margin: 12px 0;
+}
+
+.section-heading p {
+  color: #777;
+}
+
+.gold-line {
+  width: 55px;
+  height: 3px;
+  background: var(--gold);
+  margin: 17px auto;
+}
+
+/* ===============================
+   HEADER AND NAVIGATION
+================================ */
+
+header {
+  background: var(--navy);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: white;
+}
+
+.logo span {
+  color: var(--gold);
+}
+
+.logo small {
+  display: block;
+  font-size: 10px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ===============================
+   HOME BANNER
+================================ */
+
+.hero {
+  min-height: 620px;
+
+  background:
+    linear-gradient(#101e327a, #101e32e8),
+    url("images/hero.jpg") center/cover;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 850px;
+  margin: auto;
+  padding: 90px 0;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 7vw, 72px);
+  margin: 20px 0;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* ===============================
+   ABOUT CHURCH
+================================ */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-grid img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-text h2 {
+  font-size: 40px;
+  color: var(--navy);
+  margin: 15px 0;
+}
+
+/* ===============================
+   SERVICES
+================================ */
+
+.services {
+  background: var(--navy);
+  color: white;
+}
+
+.services .section-heading h2 {
+  color: white;
+}
+
+.services .section-heading p {
+  color: #ddd;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  color: var(--text);
+  padding: 28px;
+  text-align: center;
+  border-radius: 8px;
+  border-bottom: 4px solid var(--gold);
+}
+
+.card h3 {
+  color: var(--navy);
+  margin-bottom: 12px;
+  font-size: 23px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+/* ===============================
+   BIBLE VERSE
+================================ */
+
+.verse {
+  background:
+    linear-gradient(#101e32df, #101e32df),
+    url("images/worship.jpg") center/cover;
+
+  color: white;
+  text-align: center;
+}
+
+.verse blockquote {
+  max-width: 850px;
+  margin: 25px auto;
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+.verse strong {
+  color: var(--gold);
+}
+
+/* ===============================
+   MINISTRIES
+================================ */
+
+#ministries .card {
+  min-height: 160px;
+}
+
+/* ===============================
+   PHOTO GALLERY
+================================ */
+
+.gallery-section {
+  background: var(--light);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.gallery-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px #00000012;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-card img:hover {
+  transform: scale(1.03);
+}
+
+.gallery-card p {
+  padding: 14px;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+/* ===============================
+   VIDEO GALLERY
+================================ */
+
+.video-section {
+  background: var(--navy);
+}
+
+.video-section .section-heading h2 {
+  color: white;
+}
+
+.video-section .section-heading p {
+  color: #ddd;
+}
+
+.gallery-card iframe,
+.gallery-card video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: block;
+  border: none;
+  background: #111;
+}
+
+/* ===============================
+   PASTOR SECTION
+================================ */
+
+.pastor-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.pastor-grid img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.pastor-grid h2 {
+  color: var(--navy);
+  font-size: 36px;
+  margin: 12px 0;
+}
+
+/* ===============================
+   CONTACT
+================================ */
+
+.contact {
+  background: #eeece5;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+.contact h3 {
+  color: var(--navy);
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  margin: 12px 0;
+}
+
+.contact a {
+  color: var(--navy);
+}
+
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 13px;
+  margin: 8px 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font: inherit;
+}
+
+textarea {
+  height: 120px;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer {
+  background: #091526;
+  color: white;
+  padding: 35px 0;
+  text-align: center;
+}
+
+footer img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+footer p {
+  color: #ccc;
+}
+
+/* ===============================
+   WHATSAPP
+================================ */
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #20bd68;
+  color: white;
+  padding: 14px 17px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 24px;
+  z-index: 100;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media(max-width: 850px) {
+
+  .menu {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 100%;
+    background: var(--navy);
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  .about-grid,
+  .pastor-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards,
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    min-height: 500px;
+  }
+}
+
+@media(max-width: 520px) {
+
+  .cards,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .logo {
+    font-size: 14px;
+  }
+
+}
+
+
+/* DONATION SECTION */
+
+.donation-section {
+  background: #f7f5ef;
+}
+
+.donation-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.donation-text,
+.qr-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px #00000010;
+}
+
+.donation-text h3,
+.qr-box h3 {
+  color: #101e32;
+  margin-bottom: 15px;
+}
+
+.donation-text p {
+  margin-bottom: 15px;
+}
+
+.qr-box {
+  text-align: center;
+}
+
+.qr-placeholder {
+  width: 250px;
+  height: 250px;
+  border: 2px dashed #d9ad63;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #777;
+  background: #fafafa;
+}
+
+.qr-note {
+  font-size: 13px;
+  color: #777;
+}
+
+@media(max-width: 700px) {
+  .donation-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ANNOUNCEMENTS */
+.extra-section {
+    padding: 70px 8%;
+    text-align: center;
+    background: #f7f5ef;
+}
+
+.extra-section h2 {
+    color: #101e32;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.extra-section .section-intro {
+    color: #555;
+    margin-bottom: 35px;
+}
+
+.extra-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.extra-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: left;
+    border-bottom: 4px solid #d9ad63;
+}
+
+.extra-card h3 {
+    color: #101e32;
+    margin-bottom: 12px;
+}
+
+.extra-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* DONATION SECTION */
+.donate-section {
+    padding: 70px 8%;
+    text-align: center;
+    background: #101e32;
+    color: white;
+}
+
+.donate-section h2 {
+    color: #d9ad63;
+    font-size: 32px;
+}
+
+.donate-section p {
+    max-width: 650px;
+    margin: 15px auto;
+    line-height: 1.8;
+}
+
+.donate-box {
+    background: white;
+    color: #303b4c;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.qr-placeholder {
+    border: 2px dashed #d9ad63;
+    padding: 35px 15px;
+    margin: 20px auto;
+    max-width: 220px;
+    color: #555;
+}
+
+.donate-note {
+    font-size: 13px;
+    color: #777;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .extra-section,
+    .donate-section {
+        padding: 45px 5%;
+    }
+
+    .extra-section h2,
+    .donate-section h2 {
+        font-size: 26px;
+    }
+}
+
+.pastor-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pastor-profile img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.pastor-profile .pastor-name {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: var(--gold);
+    text-align: center;
+}
+
+.pastor-profile .pastor-title {
+    margin-top: 0;
+    text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===============================
+     HEADER
+================================ -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="#home" class="logo">
+
+<img src="images/church-logo.jpeg" alt="United Church of God Logo">
+
+<div>
+UNITED <span>CHURCH OF GOD</span>
+<small>VEMULANARVA</small>
+</div>
+
+</a>
+
+<button class="menu" onclick="toggleMenu()">☰</button>
+
+<nav id="navigation">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#ministries">Ministries</a>
+<a href="#news">Announcements</a>
+<a href="#events">Events</a>
+<a href="#gallery">Photos</a>
+<a href="#videos">Videos</a>
+<a href="#pastor">Pastor</a>
+<a href="#donate">Donate</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ===============================
+     HOME
+================================ -->
+
+<section class="hero" id="home">
+
+<div class="container hero-content">
+
+<span class="eyebrow">WELCOME TO GOD'S HOUSE</span>
+
+<h1>UNITED CHURCH OF GOD</h1>
+
+<p>
+Come and experience the love of Jesus Christ.
+Let us worship together, grow in faith and share God's Word.
+</p>
+
+<a href="#services" class="btn">Join Our Worship</a>
+
+<a href="#contact" class="btn">Contact Us</a>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
+     ABOUT
+================================ -->
+
+<section id="about">
+
+<div class="container about-grid">
+
+<img src="images/church_image.jpeg" alt="Our Church">
+
+<div class="about-text">
+
+<span class="eyebrow">WHO WE ARE</span>
+
+<h2>A Family United in Christ</h2>
+
+<p>
+Welcome to United Church of God, Vemulanarva.
+
+We are a Christian community committed to worshipping
+God, sharing the Gospel of Jesus Christ and serving
+people with love.
+</p>
+
+<p>
+Our desire is to help every person grow in faith,
+experience God's grace and discover His purpose.
+</p>
+
+<a href="#contact" class="btn">Visit Our Church</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
+     WORSHIP SERVICES
+================================ -->
+
+<section class="services" id="services">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span class="eyebrow">JOIN US</span>
+
+<h2>Church Services</h2>
+
+<p>Everyone is welcome to worship with us.</p>
+
+<div class="gold-line"></div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Sunday Worship</h3>
+
+<p>Sunday</p>
+
+<p>EDIT YOUR SERVICE TIME HERE</p>
+
+</div>
+
+<div class="card">
+
+<h3>Bible Study</h3>
+
+<p>EDIT YOUR DAY AND TIME HERE</p>
+
+</div>
+
+<div class="card">
+
+<h3>Prayer Meeting</h3>
+
+<p>EDIT YOUR DAY AND TIME HERE</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
+     MINISTRIES
+================================ -->
+
+<section id="ministries">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span class="eyebrow">SERVING TOGETHER</span>
+
+<h2>Our Ministries</h2>
+
+<p>Growing together in Christ.</p>
+
+<div class="gold-line"></div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Worship Ministry</h3>
+<p>Praising and glorifying God through worship.</p>
+</div>
+
+<div class="card">
+<h3>Youth Ministry</h3>
+<p>Encouraging young people to follow Jesus.</p>
+</div>
+
+<div class="card">
+<h3>Children's Ministry</h3>
+<p>Teaching children about God's love.</p>
+</div>
+
+<div class="card">
+<h3>Prayer Ministry</h3>
+<p>Praying together for families and communities.</p>
+</div>
+
+<div class="card">
+<h3>Women's Fellowship</h3>
+<p>Growing in faith, prayer and fellowship.</p>
+</div>
+
+<div class="card">
+<h3>Outreach Ministry</h3>
+<p>Sharing the Gospel and serving people.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CHURCH ANNOUNCEMENTS -->
+<section class="extra-section" id="news">
+
+    <h2>Church Announcements</h2>
+
+    <p class="section-intro">
+        Stay connected with the latest news and updates from our church.
+    </p>
+
+    <div class="extra-cards">
+
+        <div class="extra-card">
+            <h3>Sunday Worship</h3>
+            <p>
+                Join us for worship, prayer, praise and the Word of God.
+                Everyone is welcome.
+            </p>
+        </div>
+
+        <div class="extra-card">
+            <h3>Prayer Meetings</h3>
+            <p>
+                Come together in prayer as we seek God's guidance,
+                strength and blessings.
+            </p>
+        </div>
+
+        <div class="extra-card">
+            <h3>Church Updates</h3>
+            <p>
+                Visit this website regularly for the latest church
+                announcements and ministry updates.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- UPCOMING EVENTS -->
+<section class="extra-section" id="events">
+
+    <h2>Church Events</h2>
+
+    <p class="section-intro">
+        Be part of our church gatherings and special programmes.
+    </p>
+
+    <div class="extra-cards">
+
+        <div class="extra-card">
+            <h3>Worship Services</h3>
+            <p>
+                Join our regular worship services and experience
+                the presence of God.
+            </p>
+        </div>
+
+        <div class="extra-card">
+            <h3>Special Prayer Meetings</h3>
+            <p>
+                Gather with us for prayer, fellowship and spiritual growth.
+            </p>
+        </div>
+
+        <div class="extra-card">
+            <h3>Church Celebrations</h3>
+            <p>
+                Stay connected for upcoming celebrations and
+                special church programmes.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===============================
+     BIBLE VERSE
+================================ -->
+
+<section class="verse">
+
+<div class="container">
+
+<span class="eyebrow">GOD'S WORD</span>
+
+<blockquote>
+"For where two or three are gathered together
+in my name, there am I in the midst of them."
+</blockquote>
+
+<strong>MATTHEW 18:20 (KJV)</strong>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
+     PHOTO GALLERY
+================================ -->
+
+<section class="gallery-section" id="gallery">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span class="eyebrow">CHURCH MEMORIES</span>
+
+<h2>Our Photo Gallery</h2>
+
+<p>
+Beautiful moments from our worship services,
+celebrations and church programmes.
+</p>
+
+<div class="gold-line"></div>
+
+</div>
+
+<div class="gallery-grid" id="photoGallery"></div>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
+     VIDEO GALLERY
+================================ -->
+
+<section class="video-section" id="videos">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span class="eyebrow">WATCH AND BE BLESSED</span>
+
+<h2>Our Church Videos</h2>
+
+<p>
+Watch sermons, worship services and special programmes.
+</p>
+
+<div class="gold-line"></div>
+
+</div>
+
+<div class="gallery-grid" id="videoGallery"></div>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
+     PASTOR
+================================ -->
+
+<section id="pastor">
+
+    <div class="container pastor-grid">
+
+        <!-- PASTOR PHOTO AND NAME -->
+        <div class="pastor-profile">
+
+            <img src="images/pastor.jpg" alt="Church Pastor">
+
+            <h3 class="pastor-name">Pastor REV.DR.MEDI SELVARAJU</h3>
+
+            <p class="pastor-title">Church Pastor</p>
+
+        </div>
+
+        <!-- PASTOR MESSAGE -->
+        <div>
+
+            <span class="eyebrow">A MESSAGE FROM OUR CHURCH</span>
+
+            <h2>God Has a Purpose for Your Life</h2>
+
+            <p>Dear Brothers and Sisters in Christ,</p>
+
+            <p>
+                We warmly welcome you to United Church of God.
+                May the love of Jesus Christ fill your heart,
+                strengthen your faith and bless your family.
+            </p>
+
+            <p><strong>United Church of God, Vemulanarva</strong></p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CHURCH DONATION SECTION
+
+<section id="donate" class="donation-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">SUPPORT GOD'S WORK</span>
+      <h2>Support Our Church</h2>
+      <p>Your generous contribution helps us continue our ministry.</p>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="donation-content">
+
+      <div class="donation-text">
+        <h3>Give With a Joyful Heart</h3>
+
+        <p>
+          Your donations help support church activities,
+          worship services, Gospel ministry, building
+          maintenance and helping people in need.
+        </p>
+
+        <p>
+          Every contribution is valuable.
+          Thank you for supporting United Church of God.
+        </p>
+
+        <h3>Ways to Give</h3>
+        <p>UPI | Google Pay | PhonePe | Paytm</p>
+      </div>
+
+      <div class="qr-box">
+        <h3>Scan to Donate</h3>
+
+        <!-- ADD YOUR REAL QR IMAGE HERE LATER -->
+     <!--   <img src="images/donation-qr.png"
+             alt="United Church of God Donation QR"
+             style="width:250px; max-width:100%; height:auto;">
+
+        <p class="qr-note">
+          Scan this QR code using your UPI payment app.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section> -->
+
+<!-- CHURCH DONATION -->
+<section class="donate-section" id="donate">
+
+    <h2>Support Our Church Ministry</h2>
+
+    <p>
+        Your generous contributions help support church activities,
+        worship services, ministry work and the sharing of God's Word.
+    </p>
+
+    <div class="donate-box">
+
+        <h3>Give Towards God's Ministry</h3>
+
+        <p>
+            You can support our church through a verified
+            UPI payment or bank transfer.
+        </p>
+
+        <div class="qr-placeholder">
+            <h3>UPI QR CODE</h3>
+            <p>Place your genuine payment QR code here.</p>
+        </div>
+
+        <p class="donate-note">
+            Please verify the church's official payment details
+            before making any contribution.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===============================
+     CONTACT
+================================ -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span class="eyebrow">GET IN TOUCH</span>
+
+<h2>Contact Our Church</h2>
+
+<p>We would love to hear from you.</p>
+
+<div class="gold-line"></div>
+
+</div>
+
+<div class="contact-grid">
+
+<div>
+
+<h3>Church Address</h3>
+
+<p>
+
+<strong>UNITED CHURCH OF GOD</strong><br>
+
+Vemulanarva (Post)<br>
+
+Vatsavai (Mandal)<br>
+
+NTR District – PIN 521402<br>
+
+Andhra Pradesh, India.
+
+</p>
+
+<p>
+<strong>Phone:</strong><br>
+
+<a href="tel:+919908801741">9908801741</a><br>
+
+<a href="tel:+918184881741">8184881741</a>
+
+</p>
+
+<p>
+
+<strong>Email:</strong><br>
+
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=ucg33326@gmail.com"
+   target="_blank"
+   rel="noopener noreferrer">
+   Send Email
+</a>
+
+</p>
+
+<p>
+
+<strong>Website:</strong><br>
+
+www.unitedchurchofgod.com
+
+</p>
+
+<a class="btn"
+href="https://www.google.com/maps/search/?api=1&query=United+Church+of+God+Vemulanarva+Vatsavai+521402"
+target="_blank">
+
+Find Our Church
+
+</a>
+
+</div>
+
+
+<!-- PRAYER REQUEST FORM -->
+
+<form onsubmit="sendPrayer(event)">
+
+<h3>Prayer Request</h3>
+
+<label>Your Name</label>
+
+<input id="visitorName" type="text" required>
+
+<label>Your Email</label>
+
+<input id="visitorEmail" type="email" required>
+
+<label>Your Prayer Request</label>
+
+<textarea id="visitorMessage" required></textarea>
+
+<button class="btn" type="submit">
+Send Prayer Request
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
+     FOOTER
+================================ -->
+
+<footer>
+
+<img src="images/church-logo.jpeg" alt="Church Logo">
+
+<h3>UNITED CHURCH OF GOD</h3>
+
+<p>Vemulanarva, Andhra Pradesh, India.</p>
+
+<p>Faith | Hope | Love</p>
+
+<p>
+© <span id="year"></span> United Church of God.
+All Rights Reserved.
+</p>
+
+</footer>
+
+
+<!-- WHATSAPP BUTTON -->
+
+<a class="whatsapp"
+href="https://wa.me/919908801741"
+target="_blank"
+aria-label="Contact us on WhatsApp">
+
+☎
+
+</a>
+
+
+<script>
+
+/* ===============================
+   MOBILE MENU
+================================ */
+
+function toggleMenu() {
+
+  document.getElementById("navigation")
+  .classList.toggle("open");
+
+}
+
+
+/* ===============================
+   PHOTO GALLERY
+
+   ADD NEW PHOTOS HERE.
+
+   IMPORTANT:
+   Keep old photos.
+   Add new entries before ];
+================================ */
+
+const photos = [
+
+  {
+    image: "images/church_image.jpeg",
+    title: "Our Church"
+  },
+
+  {
+    image: "images/worship.jpg",
+    title: "Worship Service"
+  },
+
+  {
+    image: "images/event1.jpg",
+    title: "Church Event"
+  },
+  
+  {
+    image: "images/event2.jpg",
+    title: "Christmas Celebration"
+  },
+
+  {
+    image: "images/event2.jpg",
+    title: "Christmas Celebration"
+  },
+
+  {
+    image: "images/event2.jpg",
+    title: "Christmas Celebration"
+  },
+
+  {
+    image: "images/event2.jpg",
+    title: "Christmas Celebration"
+  },
+
+  {
+    image: "images/event2.jpg",
+    title: "Christmas Celebration"
+  },
+
+  {
+    image: "images/event2.jpg",
+    title: "Christmas Celebration"
+  }
+  
+
+];
+
+
+/* DISPLAY ALL PHOTOS */
+
+const photoGallery =
+document.getElementById("photoGallery");
+
+photos.forEach(photo => {
+
+  const card = document.createElement("div");
+
+  card.className = "gallery-card";
+
+  const img = document.createElement("img");
+
+  img.src = photo.image;
+
+  img.alt = photo.title;
+
+  img.loading = "lazy";
+
+  const caption = document.createElement("p");
+
+  caption.textContent = photo.title;
+
+  card.appendChild(img);
+
+  card.appendChild(caption);
+
+  photoGallery.appendChild(card);
+
+});
+
+
+/* ===============================
+   VIDEO GALLERY
+
+   YOUTUBE VIDEO:
+   Copy ID from YouTube URL.
+
+   MP4 VIDEO:
+   Put video inside videos folder.
+
+   Add new entries before ];
+================================ */
+
+const videos = [
+
+  {
+    type: "youtube",
+    id: "YOUR_VIDEO_ID",
+    title: "Sunday Worship Service"
+  },
+
+  // Example second YouTube video:
+  // {
+  //   type: "youtube",
+  //   id: "SECOND_VIDEO_ID",
+  //   title: "Bible Message"
+  // },
+
+  // Example MP4 video:
+  // {
+  //   type: "mp4",
+  //   file: "videos/worship.mp4",
+  //   title: "Church Programme"
+  // }
+
+];
+
+
+/* DISPLAY ALL VIDEOS */
+
+const videoGallery =
+document.getElementById("videoGallery");
+
+videos.forEach(video => {
+
+  const card = document.createElement("div");
+
+  card.className = "gallery-card";
+
+  if (video.type === "youtube") {
+
+    const iframe = document.createElement("iframe");
+
+    iframe.src =
+    "https://www.youtube-nocookie.com/embed/" + video.id;
+
+    iframe.title = video.title;
+
+    iframe.loading = "lazy";
+
+    iframe.allowFullscreen = true;
+
+    card.appendChild(iframe);
+
+  }
+
+  else if (video.type === "mp4") {
+
+    const player = document.createElement("video");
+
+    player.controls = true;
+
+    player.preload = "metadata";
+
+    const source = document.createElement("source");
+
+    source.src = video.file;
+
+    source.type = "video/mp4";
+
+    player.appendChild(source);
+
+    card.appendChild(player);
+
+  }
+
+  const caption = document.createElement("p");
+
+  caption.textContent = video.title;
+
+  card.appendChild(caption);
+
+  videoGallery.appendChild(card);
+
+});
+
+
+/* ===============================
+   PRAYER REQUEST EMAIL
+================================ */
+
+function sendPrayer(event) {
+
+    event.preventDefault();
+
+    const form = event.target;
+
+    const name = form.querySelector('[name="name"]')?.value || "";
+    const email = form.querySelector('[name="email"]')?.value || "";
+    const message = form.querySelector('[name="message"]')?.value || "";
+
+    const subject = "Church Prayer Request";
+
+    const body =
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n\n" +
+        "Prayer Request:\n" + message;
+
+    const gmailURL =
+        "https://mail.google.com/mail/?view=cm&fs=1" +
+        "&to=ucg33326@gmail.com" +
+        "&su=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
+    window.open(gmailURL, "_blank");
+
+}
+
+
+/* COPYRIGHT YEAR */
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+</script>
+
+</body>
+</html>
